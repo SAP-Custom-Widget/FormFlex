@@ -16,14 +16,14 @@
       "kind": "main",
       "tag": "com-rohitchouhan-sap-formflex",
       "url": "https://cdn.jsdelivr.net/gh/SAP-Custom-Widget/FormFlex@stagging/dist/FormFlex.bundle.js",
-      "integrity": "sha384-qzMaPG1U7UXIGM0UnL2QRlprvE7qgAQ087SNEyUNRdzYyyUU9l6FRctDbvrNWhFC",
+      "integrity": "sha384-zKMXqBrtyZnCSskU64iLrj4q8heP/pF2Itt4JyZyeSCRBoKkKaSNE90nhr1oTvsZ",
       "ignoreIntegrity": false
     },
     {
       "kind": "builder",
       "tag": "com-rohitchouhan-sap-formflex-builder",
       "url": "https://cdn.jsdelivr.net/gh/SAP-Custom-Widget/FormFlex@stagging/dist/FormFlex.bundle.js",
-      "integrity": "sha384-qzMaPG1U7UXIGM0UnL2QRlprvE7qgAQ087SNEyUNRdzYyyUU9l6FRctDbvrNWhFC",
+      "integrity": "sha384-zKMXqBrtyZnCSskU64iLrj4q8heP/pF2Itt4JyZyeSCRBoKkKaSNE90nhr1oTvsZ",
       "ignoreIntegrity": false
     }
   ],
@@ -44,7 +44,7 @@
     },
     "formBgTransparent": {
       "type": "boolean",
-      "default": true
+      "default": false
     },
     "formLayoutColumns": {
       "type": "number",
@@ -65,6 +65,10 @@
     "formBorderColor": {
       "type": "string",
       "default": "#89919a"
+    },
+    "formBorderWidth": {
+      "type": "number",
+      "default": 1
     },
     "inputBorderRadius": {
       "type": "number",
