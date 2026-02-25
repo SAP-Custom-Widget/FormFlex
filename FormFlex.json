@@ -1,0 +1,164 @@
+{
+  "id": "com.rohitchouhan.sap.formflex",
+  "version": "1.0.0",
+  "name": "FormFlex",
+  "description": "A dynamic and flexible form builder custom widget for SAP Analytics Cloud (SAC).",
+  "newInstancePrefix": "FormFlex",
+  "vendor": "rohitchouhan.com",
+  "eula": "rohitchouhan.com",
+  "license": "MIT",
+  "icon": "https://cdn.jsdelivr.net/gh/SAP-Custom-Widget/FormFlex@1.0.0/icon.png",
+  "imports": [
+    "datasource"
+  ],
+  "webcomponents": [
+    {
+      "kind": "main",
+      "tag": "com-rohitchouhan-sap-formflex",
+      "url": "https://cdn.jsdelivr.net/gh/SAP-Custom-Widget/FormFlex@1.0.0/dist/FormFlex.bundle.js",
+      "integrity": "sha512-dlNLYV0jHK2RZ3glBHZRZqH70eYf4yPPirsCq0PqDkOsOmjwbxVU4tk/zDzd2m5BF3fBpVNOq6haFGPk3NLsqw==",
+      "ignoreIntegrity": false
+    },
+    {
+      "kind": "builder",
+      "tag": "com-rohitchouhan-sap-formflex-builder",
+      "url": "https://cdn.jsdelivr.net/gh/SAP-Custom-Widget/FormFlex@1.0.0/dist/FormFlex.bundle.js",
+      "integrity": "sha512-dlNLYV0jHK2RZ3glBHZRZqH70eYf4yPPirsCq0PqDkOsOmjwbxVU4tk/zDzd2m5BF3fBpVNOq6haFGPk3NLsqw==",
+      "ignoreIntegrity": false
+    }
+  ],
+  "properties": {
+    "notificationToggle": {
+      "description": "Enable or disable notifications for new messages",
+      "type": "boolean",
+      "default": true
+    },
+    "formConfig": {
+      "description": "JSON configuration for dynamic form layout",
+      "type": "string",
+      "default": "[]"
+    },
+    "formBgColor": {
+      "type": "string",
+      "default": "#ffffff"
+    },
+    "formBgTransparent": {
+      "type": "boolean",
+      "default": false
+    },
+    "formLayoutColumns": {
+      "type": "number",
+      "default": 1
+    },
+    "formTextColor": {
+      "type": "string",
+      "default": "#32363a"
+    },
+    "formFontSize": {
+      "type": "number",
+      "default": 14
+    },
+    "formBorderShow": {
+      "type": "boolean",
+      "default": true
+    },
+    "formBorderColor": {
+      "type": "string",
+      "default": "#89919a"
+    },
+    "formBorderWidth": {
+      "type": "number",
+      "default": 1
+    },
+    "inputBorderRadius": {
+      "type": "number",
+      "default": 4
+    },
+    "btnBgColor": {
+      "type": "string",
+      "default": "#0a6ed1"
+    },
+    "btnTextColor": {
+      "type": "string",
+      "default": "#ffffff"
+    },
+    "btnBorderRadius": {
+      "type": "number",
+      "default": 4
+    }
+  },
+  "methods": {
+    "enableUpdateNotification": {
+      "description": "Enable or disable update notifications",
+      "parameters": [
+        {
+          "name": "notificationToggle",
+          "type": "boolean",
+          "description": "Enable or disable update notifications"
+        }
+      ],
+      "body": "this.notificationToggle = notificationToggle;"
+    },
+    "isUpdateNotificationEnable": {
+      "description": "Check if update notifications are enabled",
+      "returnType": "boolean",
+      "body": "return this.notificationToggle;"
+    },
+    "setFormConfig": {
+      "description": "Dynamically sets the form fields configuration",
+      "parameters": [
+        {
+          "name": "configJson",
+          "type": "Selection[]",
+          "description": "JSON array of field configurations"
+        }
+      ]
+    },
+    "getFormValue": {
+      "description": "Gets the current value of a specific form field",
+      "returnType": "string",
+      "parameters": [
+        {
+          "name": "fieldId",
+          "type": "string",
+          "description": "The ID of the field"
+        }
+      ]
+    },
+    "setFormValue": {
+      "description": "Sets the value of a specific form field",
+      "parameters": [
+        {
+          "name": "fieldId",
+          "type": "string",
+          "description": "The ID of the field"
+        },
+        {
+          "name": "value",
+          "type": "string",
+          "description": "The value to set"
+        }
+      ]
+    },
+    "getAllValues": {
+      "description": "Returns a JSON string containing all form values",
+      "returnType": "Selection"
+    },
+    "isButtonClicked": {
+      "description": "Checks if a specific submit button was the last one clicked.",
+      "returnType": "boolean",
+      "parameters": [
+        {
+          "name": "buttonId",
+          "type": "string",
+          "description": "The ID of the button to check"
+        }
+      ]
+    }
+  },
+  "events": {
+    "onSubmit": {
+      "description": "Event triggered when user click any submit button."
+    }
+  }
+}
