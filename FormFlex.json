@@ -16,14 +16,14 @@
       "kind": "main",
       "tag": "com-rohitchouhan-sap-formflex",
       "url": "https://cdn.jsdelivr.net/gh/SAP-Custom-Widget/FormFlex@1.0.0/dist/FormFlex.bundle.js",
-      "integrity": "sha512-dlNLYV0jHK2RZ3glBHZRZqH70eYf4yPPirsCq0PqDkOsOmjwbxVU4tk/zDzd2m5BF3fBpVNOq6haFGPk3NLsqw==",
+      "integrity": "sha512-fIm+z4cGscdxi4cMFFcRS1DoUyFdJZVLaWVWDVKNjBXIJdiHLHlaEvBRzxi7IRVqzxTHLq5UhNo5/fONktcG6g==",
       "ignoreIntegrity": false
     },
     {
       "kind": "builder",
       "tag": "com-rohitchouhan-sap-formflex-builder",
       "url": "https://cdn.jsdelivr.net/gh/SAP-Custom-Widget/FormFlex@1.0.0/dist/FormFlex.bundle.js",
-      "integrity": "sha512-dlNLYV0jHK2RZ3glBHZRZqH70eYf4yPPirsCq0PqDkOsOmjwbxVU4tk/zDzd2m5BF3fBpVNOq6haFGPk3NLsqw==",
+      "integrity": "sha512-fIm+z4cGscdxi4cMFFcRS1DoUyFdJZVLaWVWDVKNjBXIJdiHLHlaEvBRzxi7IRVqzxTHLq5UhNo5/fONktcG6g==",
       "ignoreIntegrity": false
     }
   ],
