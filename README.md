@@ -57,7 +57,7 @@ A dynamic and flexible form builder custom widget for SAP Analytics Cloud (SAC).
 🌸💖 If you’d like to show some love, you can send a small donation here: 👉 [rohitchouhan.com/donate](rohitchouhan.com/donate) ✨
 
 > 🌟 You can explore more ultimate custom widgets right here ✨
-👉 [sap-custom-widget.rohitchouhan.com](sap-custom-widget.rohitchouhan.com) 💡
+👉 [sap-custom-widget.rohitchouhan.com](https://sap-custom-widget.rohitchouhan.com) 💡
 
 ### Report bugs or issues
 You are welcome to open a _[ticket](https://github.com/SAP-Custom-Widget/FormFlex/issues)_ on GitHub if any problems arise. New ideas are always welcome.
